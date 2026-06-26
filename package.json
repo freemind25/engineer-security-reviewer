@@ -1,0 +1,36 @@
+{
+  "name": "engineer-security-reviewer",
+  "version": "2.0.0",
+  "description": "Two-pass codebase audit — security first (including supply chain & crypto), then dependencies with context, then duplicated logic — followed by a fix pass that only touches what the user confirmed.",
+  "main": "SKILL.md",
+  "type": "module",
+  "keywords": [
+    "security",
+    "audit",
+    "code-review",
+    "vulnerability",
+    "dependencies",
+    "duplication",
+    "codebase",
+    "static-analysis",
+    "best-practices"
+  ],
+  "author": "freemind25",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freemind25/engineer-security-reviewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freemind25/engineer-security-reviewer/issues"
+  },
+  "homepage": "https://github.com/freemind25/engineer-security-reviewer#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+}
