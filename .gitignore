@@ -1,0 +1,10 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Empaquetage local
+*.skill
+dist/
+
+# Résultats de tests locaux (skill-creator)
+*-workspace/

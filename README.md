@@ -51,13 +51,17 @@ Uploadez le dossier (ou son ZIP) via l'endpoint de création de Skill — voir l
 
 ```
 engineer-security-reviewer/
-├── SKILL.md          # Le skill lui-même (frontmatter + instructions)
-├── README.md         # Ce fichier
+├── SKILL.md                          # Le skill lui-même (frontmatter + instructions)
+├── README.md                         # Ce fichier
 ├── LICENSE
 ├── CONTRIBUTING.md
+├── .github/workflows/validate-skill.yml  # Valide le frontmatter à chaque push/PR
+├── scripts/validate_skill.py         # Script de validation autonome (zéro dépendance interne)
 └── evals/
-    └── evals.json     # Prompts de test (non inclus dans le .skill packagé)
+    └── evals.json                    # Prompts de test (non inclus dans le .skill packagé)
 ```
+
+Le frontmatter (`name`, `description`) est validé automatiquement par CI à chaque push/PR sur `main` : kebab-case, ≤ 64 caractères pour le nom, ≤ 1024 caractères et aucun chevron pour la description.
 
 ## Exemple d'utilisation
 
